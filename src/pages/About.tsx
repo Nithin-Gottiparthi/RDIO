@@ -130,10 +130,10 @@ const About = () => {
             <div>
               <h3 className="heading-sm mb-4 flex items-center">
                 <Users className="text-rdio-teal mr-2" size={24} />
-                Founder's Profile
+                Leadership Team
               </h3>
               <div className="bg-white p-8 rounded-xl shadow-sm h-full">
-                <div className="flex flex-col md:flex-row gap-6">
+                <div className="flex flex-col md:flex-row gap-6 mb-8">
                   <div className="w-full md:w-1/3">
                     <div className="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
                       <div className="bg-gradient-to-br from-rdio-teal to-rdio-green h-full flex items-center justify-center">
@@ -150,6 +150,29 @@ const About = () => {
                     <p className="text-gray-700">
                       Under his guidance, RDIO has grown to become a premier innovation hub that collaborates with government bodies, academic institutions, and industry leaders to bridge the gap between theory and practice.
                     </p>
+                  </div>
+                </div>
+
+                {/* New team member section */}
+                <div className="border-t pt-8">
+                  <div className="flex flex-col md:flex-row gap-6">
+                    <div className="w-full md:w-1/3">
+                      <div className="aspect-w-1 aspect-h-1 rounded-lg overflow-hidden">
+                        <div className="bg-gradient-to-br from-rdio-green to-rdio-teal h-full flex items-center justify-center">
+                          <span className="text-white text-5xl">SN</span>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="w-full md:w-2/3">
+                      <h4 className="text-xl font-semibold mb-2">Mr. Srikanth Nama</h4>
+                      <p className="text-rdio-green font-medium mb-3">Founder & Director, RDIO</p>
+                      <p className="text-gray-700 mb-4">
+                        Mr. Srikanth Nama is a purpose-driven leader with a background as a Chartered Accountant and a strong belief in the power of practical skills. He founded RDIO to address the limitations of traditional education and ensure learners are equipped for real-world success.
+                      </p>
+                      <p className="text-gray-700 mb-4">
+                        His vision has shaped RDIO into a dynamic platform where theory meets application—empowering individuals across business, technology, and creative fields to unlock their potential through hands-on learning and meaningful skill development.
+                      </p>
+                    </div>
                   </div>
                 </div>
               </div>
