@@ -34,7 +34,7 @@ const Logo: React.FC<LogoProps> = ({
   // Default is the color logo
   return (
     <img
-      src="/images/logo0.png"
+      src="/images/logo2.png"
       alt="RDIO - Research Design Implement Operate"
       className={`${sizeClasses[size]} ${className}`}
     />

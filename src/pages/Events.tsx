@@ -27,54 +27,273 @@ const itemVariants = {
 
 const Events = () => {
   const [activeGalleryTab, setActiveGalleryTab] = useState("tisf");
-  
+
   const galleryItems = {
     tisf: [
       {
-        id: 1,
-        title: "TISF Opening Ceremony",
-        image: "https://images.unsplash.com/photo-1605810230434-7631ac76ec81?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        date: "March 15, 2024"
-      },
-      {
         id: 2,
-        title: "Keynote Address",
-        image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
-        date: "March 15, 2024"
+        title: "Winners Hackathon",
+        image: "/images/hackathon.JPG",
+        date: "December 2024"
       },
       {
         id: 3,
-        title: "Student Exhibitions",
-        image: "https://images.unsplash.com/photo-1500673922987-e212871fec22?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        title: "Student Celebrations",
+        image: "/images/hackathon1.JPG",
         date: "March 16, 2024"
       },
       {
         id: 4,
         title: "Award Ceremony",
-        image: "https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "/images/hackathon2.JPG",
+        date: "March 17, 2024"
+      },
+      {
+        id: 5,
+        title: "Award Ceremony",
+        image: "/images/karthik.JPG",
+        date: "March 17, 2024"
+      },
+      {
+        id: 6,
+        title: "Award Ceremony",
+        image: "/images/hck1.JPG",
+        date: "March 17, 2024"
+      },
+      {
+        id: 7,
+        title: "Award Ceremony",
+        image: "/images/hck2.JPG",
+        date: "March 17, 2024"
+      },
+      {
+        id: 8,
+        title: "Award Ceremony",
+        image: "/images/hck3.JPG",
+        date: "March 17, 2024"
+      },
+      {
+        id: 9,
+        title: "Award Ceremony",
+        image: "/images/hck4.JPG",
+        date: "March 17, 2024"
+      },
+      {
+        id: 10,
+        title: "Award Ceremony",
+        image: "/images/hck5.JPG",
+        date: "March 17, 2024"
+      },
+      {
+        id: 11,
+        title: "Award Ceremony",
+        image: "/images/hck6.JPG",
         date: "March 17, 2024"
       },
     ],
     previous: [
       {
-        id: 5,
+        id: 12,
         title: "RDIO Expo 2023",
-        image: "https://images.unsplash.com/photo-1485827404703-89b55fcc595e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "/images/img10.jpg",
         date: "November 10, 2023"
       },
       {
-        id: 6,
+        id: 12,
+        title: "RDIO Expo 2023",
+        image: "/images/img1.png",
+        date: "November 10, 2023"
+      },
+      {
+        id: 12,
+        title: "RDIO Expo 2023",
+        image: "/images/img2.jpg",
+        date: "November 10, 2023"
+      },
+      {
+        id: 12,
+        title: "RDIO Expo 2023",
+        image: "/images/img3.webp",
+        date: "November 10, 2023"
+      },
+      {
+        id: 12,
+        title: "RDIO Expo 2023",
+        image: "/images/img4.png",
+        date: "November 10, 2023"
+      },
+      {
+        id: 12,
+        title: "RDIO Expo 2023",
+        image: "/images/img6.png",
+        date: "November 10, 2023"
+      },
+      {
+        id: 12,
+        title: "RDIO Expo 2023",
+        image: "/images/img5.jpg",
+        date: "November 11, 2023"
+      },
+      {
+        id: 13,
         title: "Innovation Workshop",
-        image: "https://images.unsplash.com/photo-1519389950473-47ba0277781c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "/images/hckp2.JPG",
         date: "September 5, 2023"
       },
       {
-        id: 7,
+        id: 14,
         title: "Tech Symposium",
-        image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80",
+        image: "/images/hckp3.JPG",
         date: "July 22, 2023"
-      }
+      },
+      {
+        id: 15,
+        title: "Tech Symposium",
+        image: "/images/hckp4.JPG",
+        date: "July 22, 2023"
+      },
+      {
+        id: 16,
+        title: "Tech Symposium",
+        image: "/images/hckp5.JPG",
+        date: "July 22, 2023"
+      },
+      {
+        id: 17,
+        title: "Tech Symposium",
+        image: "/images/hckp6.JPG",
+        date: "July 22, 2023"
+      },
+      {
+        id: 18,
+        title: "Tech Symposium",
+        image: "/images/hckp7.JPG",
+        date: "July 22, 2023"
+      },
+      {
+        id: 19,
+        title: "Tech Symposium",
+        image: "/images/hckp8.JPG",
+        date: "July 22, 2023"
+      },
+      {
+        id: 20,
+        title: "Tech Symposium",
+        image: "/images/hckp9.JPG",
+        date: "July 22, 2023"
+      },
+      {
+        id: 21,
+        title: "Tech Symposium",
+        image: "/images/hckp10.JPG",
+        date: "July 22, 2023"
+      },
+      {
+        id: 22,
+        title: "Tech Symposium",
+        image: "/images/hckp11.JPG",
+        date: "July 22, 2023"
+      },
+      {
+        id: 23,
+        title: "Tech Symposium",
+        image: "/images/hckp12.JPG",
+        date: "July 22, 2023"
+      },
+      {
+        id: 24,
+        title: "Tech Symposium",
+        image: "/images/hckp13.JPG",
+        date: "July 22, 2023"
+      },
+    ],
+    kids: [
+      {
+        id: 1,
+        title: "Kids Carnival",
+        image: "/images/kids-carnival.JPG",
+        date: "August 2024"
+      },
+      {
+        id: 25,
+        title: "Kids Carnival",
+        image: "/images/kds1.JPG",
+        date: "August 2024"
+      },
+      {
+        id: 26,
+        title: "Kids Carnival",
+        image: "/images/kds2.JPG",
+        date: "August 2024"
+      },
+      {
+        id: 27,
+        title: "Kids Carnival",
+        image: "/images/kds3.JPG",
+        date: "August 2024"
+      },
+      {
+        id: 28,
+        title: "Kids Carnival",
+        image: "/images/kds4.JPG",
+        date: "August 2024"
+      },
+      {
+        id: 29,
+        title: "Kids Carnival",
+        image: "/images/kds5.JPG",
+        date: "August 2024"
+      },
+      {
+        id: 30,
+        title: "Kids Carnival",
+        image: "/images/kds6.JPG",
+        date: "August 2024"
+      },
+      {
+        id: 31,
+        title: "Kids Carnival",
+        image: "/images/kds7.JPG",
+        date: "August 2024"
+      },
+      {
+        id: 32,
+        title: "Kids Carnival",
+        image: "/images/kds8.JPG",
+        date: "August 2024"
+      },
+      {
+        id: 33,
+        title: "Kids Carnival",
+        image: "/images/kds9.JPG",
+        date: "August 2024"
+      },
+      {
+        id: 34,
+        title: "Kids Carnival",
+        image: "/images/kds10.JPG",
+        date: "August 2024"
+      },
+      {
+        id: 35,
+        title: "Kids Carnival",
+        image: "/images/kds11.JPG",
+        date: "August 2024"
+      },
+      {
+        id: 36,
+        title: "Kids Carnival",
+        image: "/images/kds12.JPG",
+        date: "August 2024"
+      },
+      {
+        id: 37,
+        title: "Kids Carnival",
+        image: "/images/kds13.JPG",
+        date: "August 2024"
+      },
     ]
+
   };
 
   return (
@@ -83,23 +302,23 @@ const Events = () => {
       <div className="bg-gradient-to-r from-rdio-teal to-rdio-green text-white py-16">
         <div className="container mx-auto px-4">
           <div className="max-w-3xl mx-auto text-center">
-            <h1 className="text-4xl md:text-5xl font-bold mb-4">Events & TISF 2024</h1>
+            <h1 className="text-4xl md:text-5xl font-bold mb-4">Tech Events</h1>
             <p className="text-xl opacity-90">
-              Celebrating innovation and scientific excellence across Telangana
+              Celebrating innovation and scientific excellence across India
             </p>
           </div>
         </div>
       </div>
-      
+
       {/* TISF 2024 Section */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-4">
-          <SectionHeading 
-            title="Telangana International Science Festival 2024" 
+          <SectionHeading
+            title="Telangana International Science Festival 2024"
             subtitle="Empowering Tomorrow's Innovators, Sustaining Telangana's Progress"
             center={true}
           />
-          
+
           <div className="grid md:grid-cols-2 gap-8 items-center mb-12">
             <div>
               <h3 className="text-2xl font-semibold mb-4">Mission & Vision</h3>
@@ -118,14 +337,14 @@ const Events = () => {
               </div>
             </div>
             <div className="rounded-lg overflow-hidden shadow-lg">
-              <img 
-                src="https://images.unsplash.com/photo-1470071459604-3b5ec3a7fe05?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" 
-                alt="TISF 2024" 
+              <img
+                src="/images/img27.jpg"
+                alt="TISF 2024"
                 className="w-full h-80 object-cover"
               />
             </div>
           </div>
-          
+
           {/* FUTURA-2024 */}
           <div className="bg-gray-50 rounded-xl p-8 my-12">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-6">
@@ -137,7 +356,7 @@ const Events = () => {
                 Learn More <ExternalLink size={16} className="ml-1" />
               </Button>
             </div>
-            
+
             <div className="grid md:grid-cols-3 gap-6 mt-8">
               <Card className="border-t-4 border-rdio-teal">
                 <CardContent className="pt-6">
@@ -147,7 +366,7 @@ const Events = () => {
                   </p>
                 </CardContent>
               </Card>
-              
+
               <Card className="border-t-4 border-rdio-teal">
                 <CardContent className="pt-6">
                   <h4 className="font-semibold text-lg mb-2">Regional Selection</h4>
@@ -156,7 +375,7 @@ const Events = () => {
                   </p>
                 </CardContent>
               </Card>
-              
+
               <Card className="border-t-4 border-rdio-teal">
                 <CardContent className="pt-6">
                   <h4 className="font-semibold text-lg mb-2">Hyderabad Finals</h4>
@@ -169,23 +388,31 @@ const Events = () => {
           </div>
         </div>
       </section>
-      
+
       {/* Event Gallery */}
       <section className="bg-gray-50 py-16">
         <div className="container mx-auto px-4">
-          <SectionHeading 
-            title="Event Gallery" 
+          <SectionHeading
+            title="Event Gallery"
             subtitle="Explore moments from TISF and previous RDIO expos"
             center={true}
           />
-          
+
           <div className="flex flex-wrap justify-center mb-8">
+
             <Button
               variant={activeGalleryTab === "tisf" ? "default" : "outline"}
               className={`m-1 ${activeGalleryTab === "tisf" ? "bg-rdio-teal" : "border-rdio-teal text-rdio-teal"}`}
               onClick={() => setActiveGalleryTab("tisf")}
             >
-              TISF 2024
+              Hackathon
+            </Button>
+            <Button
+              variant={activeGalleryTab === "kids" ? "default" : "outline"}
+              className={`m-1 ${activeGalleryTab === "kids" ? "bg-rdio-teal" : "border-rdio-teal text-rdio-teal"}`}
+              onClick={() => setActiveGalleryTab("kids")}
+            >
+              Kids Carnival
             </Button>
             <Button
               variant={activeGalleryTab === "previous" ? "default" : "outline"}
@@ -195,8 +422,8 @@ const Events = () => {
               Previous Events
             </Button>
           </div>
-          
-          <motion.div 
+
+          <motion.div
             className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4"
             variants={containerVariants}
             initial="hidden"
@@ -204,15 +431,15 @@ const Events = () => {
             key={activeGalleryTab}
           >
             {galleryItems[activeGalleryTab].map((item) => (
-              <motion.div 
+              <motion.div
                 key={item.id}
                 className="bg-white rounded-lg overflow-hidden shadow-md hover:shadow-lg transition-shadow duration-300"
                 variants={itemVariants}
               >
                 <div className="relative h-48">
-                  <img 
-                    src={item.image} 
-                    alt={item.title} 
+                  <img
+                    src={item.image}
+                    alt={item.title}
                     className="w-full h-full object-cover"
                   />
                 </div>
@@ -225,7 +452,7 @@ const Events = () => {
           </motion.div>
         </div>
       </section>
-      
+
       {/* Registration CTA */}
       <section className="bg-white py-16">
         <div className="container mx-auto px-4">
@@ -233,7 +460,7 @@ const Events = () => {
             <CardContent className="p-8 text-center">
               <h3 className="heading-md mb-4">Register for Upcoming Events</h3>
               <p className="mb-6 max-w-2xl mx-auto text-gray-700">
-                Don't miss the opportunity to be part of our innovative events and exhibitions. 
+                Don't miss the opportunity to be part of our innovative events and exhibitions.
                 Register today to secure your place in the future of innovation.
               </p>
               <div className="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
